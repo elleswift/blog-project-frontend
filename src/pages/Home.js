@@ -5,7 +5,7 @@ const Home = () => {
    const [articles, setArticles] = useState([])
 
 useEffect(() => {
-  fetch('https://salty-beyond-51160.herokuapp.com/')
+  fetch('http://localhost:4000/get-articles')
   .then(res => res.json())
   .then(data => setArticles(data))
   .catch(err => console.error(err))

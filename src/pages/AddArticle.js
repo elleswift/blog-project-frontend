@@ -6,7 +6,7 @@ const AddArticle = () => {
   const sendArticle = (event) => {
     event.preventDefault();
 
-    fetch('https://salty-beyond-51160.herokuapp.com/', {
+    fetch('http://localhost:4000/add-article', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
