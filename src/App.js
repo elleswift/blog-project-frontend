@@ -8,6 +8,7 @@ import Planet from './sandbox/Planet'
 import './assets/styles.css'
 import SingleArticle from './pages/SingleArticle'
 import AddArticle from './pages/AddArticle'
+import AdminTest from './pages/AdminTest'
 
 
 function App() {
@@ -20,6 +21,7 @@ return (
         <Route path='/' element={<Home />} />
         <Route path='/single-article' element={<SingleArticle />} />
         <Route path='/add-article' element={<AddArticle />} />
+        <Route path='/admin-test' element={<AdminTest />} />
         <Route path='/planet' element={<Planet />} />
         {/* <Route path='/Admin' element={<Admin />} /> */}
         {/* <Route path='/List' element={<List />} /> */}

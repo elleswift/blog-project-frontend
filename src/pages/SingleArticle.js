@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation,} from 'react-router-dom';
 
 const SingleArticle = () => {
   const [form, setForm]= useState({})
   const [displayForm, setDisplayForm] = useState(false)
   const location = useLocation()
-  const navigate = useNavigate
+  // const navigate = useNavigate
   const { Title, Topic, Date, Description, Image } = location.state;
 
   const handleDelete = (event) => {
@@ -21,12 +21,12 @@ const SingleArticle = () => {
       .then((res) => res.json())
       .then((data) => setForm(data))
       .catch((err) => console.error(err));
-      navigate('/')
+      // navigate('/')
   };
 
   const handleUpdate = (event) => {
     event.preventDefault();
-    console.log('Sending request to update API');
+   console.log('Sending request to update API');
     
     fetch(`http://localhost:4000/update-article?Title=${Title}`,  {
       method: 'PUT',
@@ -36,8 +36,9 @@ const SingleArticle = () => {
       body: JSON.stringify(form),
     })
       .then((res) => res.json())
-      .then(() => navigate('/'))
+      .then((data) => setForm(data))
       .catch((err) => console.error(err));
+      //navigate('/')
   };
 
   const handleForm = (e) => {

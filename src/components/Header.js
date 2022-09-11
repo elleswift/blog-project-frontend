@@ -5,7 +5,9 @@ const Header = () => {
       <li><a href="http://">Planets and Moons</a></li>
       <li><a href="http://">Celestial Bodies</a></li>
       <li><a href="http://">Asteroids and Comets</a></li>
-      <li><a href="http://">About Me</a></li> 
+      <li><a href="http://">About Me</a></li>
+      <li><a href="/admin-test">AdminTest</a></li>
+      
     </ul>
   )
 }
