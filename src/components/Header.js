@@ -6,7 +6,7 @@ const Header = () => {
       <li><a href="http://">Celestial Bodies</a></li>
       <li><a href="http://">Asteroids and Comets</a></li>
       <li><a href="http://">About Me</a></li>
-      <li><a href="/admin-test">AdminTest</a></li>
+      <li><a href="/admin-test">AdminPath</a></li>
       
     </ul>
   )
