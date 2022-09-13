@@ -45,7 +45,6 @@ const SingleArticle = () => {
     setForm({...form, [e.target.name]: e.target.value})
   };
 
-  
 
   return (
     <div className='container'>
