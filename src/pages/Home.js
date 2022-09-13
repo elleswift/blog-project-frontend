@@ -5,7 +5,7 @@ const Home = () => {
    const [articles, setArticles] = useState([])
 
 useEffect(() => {
-  fetch('http://localhost:4000/get-articles')
+  fetch('https://blogproject-es.herokuapp.com/get-articles')
   .then(res => res.json())
   .then(data => setArticles(data))
   .catch(err => console.error(err))

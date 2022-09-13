@@ -6,7 +6,7 @@ const AddArticle = () => {
   const sendArticle = (event) => {
     event.preventDefault();
 
-    fetch('http://localhost:4000/add-article', {
+    fetch('https://blogproject-es.herokuapp.com/add-article', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
