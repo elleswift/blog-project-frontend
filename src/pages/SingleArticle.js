@@ -12,7 +12,7 @@ const SingleArticle = () => {
     event.preventDefault();
     console.log('Delete request sent to API');
 
-    fetch(`http://localhost:4000/delete-article?Title=${Title}`, {
+    fetch(`https://blogproject-es.herokuapp.com/delete-article?Title=${Title}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const SingleArticle = () => {
     event.preventDefault();
    console.log('Sending request to update API');
     
-    fetch(`http://localhost:4000/update-article?Title=${Title}`,  {
+    fetch(`https://blogproject-es.herokuapp.com/update-article?Title=${Title}`,  {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
