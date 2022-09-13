@@ -102,7 +102,6 @@ const SingleArticle = () => {
         <button onClick={handleDelete}>Delete Article</button>
         <button onClick={handleUpdate}>Update Article</button>
         <button onClick={() => setDisplayForm(!displayForm)}>Display Form</button>
-       
       </div>
     </div>
   );
